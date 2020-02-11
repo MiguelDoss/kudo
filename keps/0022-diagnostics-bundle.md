@@ -343,6 +343,11 @@ crashing, the collector process runs in another pod as a job. **TODO**:
 Bundle collection, CRD, do we take a Velero-style approach? Where are files
 stored? Might be time to introduce a KUDO-specific Minio instance.
 
+### More Notes
+
+- Do we need to introduce a notion of the collector or controller manager
+  signing and/or encrypting bundles? TBD.
+
 #### Preflight Checks
 
 ## Resources
