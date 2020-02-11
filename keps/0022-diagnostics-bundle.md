@@ -311,6 +311,7 @@ diagnostics:
             kind: StatefulSet # Runs on ALL pods in the statefulset
             name: "{{ .InstanceName }}-zookeeper"
       - name: DNS information for running pod
+        key: "dns-information"
         kind: Command
         spec:
           command: # Can be string or array
