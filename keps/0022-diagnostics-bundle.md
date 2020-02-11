@@ -354,7 +354,7 @@ An individual bundle resource is represented as a list inside of the
 - **spec**: The attributes of a particular kind. This is different for every
   kind.
 
-Also, may specs may include an **objectRef**. It ALWAYS has the following keys:
+Also, may specs may include an `objectRef`. It ALWAYS has the following keys:
 
 - **kind**: The Kubernetes Kind referenced. For example, this may be a
   Deployment, Pod, StatefulSet, or other resource.
