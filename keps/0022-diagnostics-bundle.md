@@ -273,6 +273,7 @@ from the operator developer:
 - Describe for the KUDO controller manager resources
 - RBAC resources that are applicable to the KUDO controller manager
 - Current settings and version information for KUDO
+- Status of last preflight check run.
 
 By default, KUDO scrubs all resources (and custom resources) of values that are
 contained within the KUDO Instance's secrets. This is configurable with the
@@ -336,6 +337,11 @@ of the `diagnostics.bundle` key's presence. Note, moving to a graph-based engine
 for KUDO will make selecting of resources much easier, rather than having to
 use magical strings with templates. Future iterations of this will reduce the
 complexity of selecting resources to run commands and files on.
+
+Steps in a bundle run serially. To prevent the KUDO controller manager from
+crashing, the collector process runs in another pod as a job. **TODO**:
+Bundle collection, CRD, do we take a Velero-style approach? Where are files
+stored? Might be time to introduce a KUDO-specific Minio instance.
 
 #### Preflight Checks
 
