@@ -346,7 +346,7 @@ contained within the KUDO Instance's secrets. This is configurable with the
 `diagnostics.filterSecrets` key.
 
 There may be other fields that need to be filtered. To solve for this, KUDO
-introduces the `diagnostics.bundles.filters` key in `operator.yaml`, which
+introduces the `diagnostics.bundle.filters` key in `operator.yaml`, which
 contains a list of filters that files pass through before writing to disk.
 Custom filters use either a regular expression or an object reference and
 JSONPath to derive values to filter.
