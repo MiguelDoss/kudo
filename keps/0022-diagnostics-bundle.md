@@ -328,7 +328,7 @@ diagnostics:
     - name: Scrub authentication information
       kind: Scrub
       spec:
-        regex: "/^host: %w+$/"
+        regex: "^host: %w+$"
 ```
 
 This key is **OPTIONAL**. Default diagnostics collection will happen regardless
